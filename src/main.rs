@@ -4,7 +4,9 @@
 // mod enums;
 // mod network;
 // mod vectors;
-mod strings;
+// mod strings;
+// mod hashmaps;
+mod errors;
 
 // use vectors::run_vectors;
 fn main() {
@@ -24,6 +26,7 @@ fn main() {
     // structs::run_structs_code();    
     // enums::run_enums();
     // run_vectors();
-    strings::run_strings();
+    // strings::run_strings();
+    // hashmaps::run_hashmaps();
+    errors::run_errors();
 }
-
