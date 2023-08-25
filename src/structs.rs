@@ -1,9 +1,9 @@
 #[allow(dead_code)]
 pub struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
+    pub username: String,
+    pub email: String,
+    pub sign_in_count: u64,
+    pub active: bool,
 }
 
 pub fn run_structs_code() {
