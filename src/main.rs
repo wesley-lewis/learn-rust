@@ -1,4 +1,4 @@
-// mod structs;
+mod structs;
 // mod borrow;
 // mod slice_type;
 // mod enums;
@@ -6,7 +6,12 @@
 // mod vectors;
 // mod strings;
 // mod hashmaps;
-mod errors;
+// mod errors;
+// mod generics;
+// mod traits;
+// mod lifetimes;
+mod tests;
+mod guess_game;
 
 // use vectors::run_vectors;
 fn main() {
@@ -28,5 +33,13 @@ fn main() {
     // run_vectors();
     // strings::run_strings();
     // hashmaps::run_hashmaps();
-    errors::run_errors();
+    // errors::run_errors();
+    // generics::run_generics();
+    // traits::run_traits();
+    // lifetimes::run_lifetimes();
+    tests::run_tests();
+}
+
+fn add_two(x: i32) -> i32 {
+    x + 2
 }
