@@ -1,4 +1,4 @@
-mod structs;
+// mod structs;
 // mod borrow;
 // mod slice_type;
 // mod enums;
@@ -10,8 +10,10 @@ mod structs;
 // mod generics;
 // mod traits;
 // mod lifetimes;
-mod tests;
-mod guess_game;
+// mod tests;
+// mod guess_game;
+// mod closures;
+mod iterators;
 
 // use vectors::run_vectors;
 fn main() {
@@ -37,9 +39,13 @@ fn main() {
     // generics::run_generics();
     // traits::run_traits();
     // lifetimes::run_lifetimes();
-    tests::run_tests();
+    // tests::run_tests();
+    // closures::run_closures();
 }
 
-fn add_two(x: i32) -> i32 {
-    x + 2
-}
+//
+// fn add_two(x: i32) -> i32 {
+//     x + 2
+// }
+//
+// pg 298
