@@ -10,9 +10,14 @@ pub fn run_smart_pointers() {
 
     let x = 5;
     let y = MyBox::new(x);
-
+    
     assert_eq!(5, x);
     assert_eq!(5, *y);
+
+    let c = CustomSmartPointer { data: String::from("my stuff") };
+    let d = CustomSmartPointer { data: String::from("Other stuff") };
+    drop(c);
+    println!("CustomSmartPointer created.");
 }
 
 enum List {
@@ -34,5 +39,15 @@ impl<T> Deref for MyBox<T> {
 
     fn deref(&self) -> &T {
         &self.0
+    }
+}
+
+struct CustomSmartPointer {
+    data: String,
+}
+
+impl Drop for CustomSmartPointer {
+    fn drop(&mut self) {
+        println!("Dropping CustomSmartPointer with data '{}'!", self.data);
     }
 }
