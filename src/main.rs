@@ -13,7 +13,8 @@
 // mod tests;
 // mod guess_game;
 // mod closures;
-mod iterators;
+// mod iterators;
+mod smart_pointers;
 
 // use vectors::run_vectors;
 fn main() {
@@ -41,6 +42,8 @@ fn main() {
     // lifetimes::run_lifetimes();
     // tests::run_tests();
     // closures::run_closures();
+    // iterators::run_iterators();
+    smart_pointers::run_smart_pointers();
 }
 
 //
@@ -48,4 +51,4 @@ fn main() {
 //     x + 2
 // }
 //
-// pg 298
+// pg 308 
