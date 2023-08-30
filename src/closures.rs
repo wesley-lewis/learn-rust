@@ -76,6 +76,7 @@ fn generate_workout(intensity: u32, random_number: u32) {
     }
 }
 
+
 #[test]
 fn call_with_different_values() {
     let mut c = Cacher::new(|a| a);
@@ -85,3 +86,4 @@ fn call_with_different_values() {
 
     assert_eq!(v2, 2);
 }
+
