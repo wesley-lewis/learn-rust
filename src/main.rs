@@ -16,7 +16,8 @@
 // mod iterators;
 // mod smart_pointers;
 // mod threads;
-mod channels;
+// mod channels;
+mod mutexes;
 
 // use vectors::run_vectors;
 fn main() {
@@ -47,7 +48,8 @@ fn main() {
     // iterators::run_iterators();
     // smart_pointers::run_smart_pointers();
     // threads::run_threads();
-    channels::run_channels();
+    // channels::run_channels();
+    mutexes::run_mutexes();
 }
 
 //
