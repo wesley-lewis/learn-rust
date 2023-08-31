@@ -16,7 +16,7 @@
 // mod iterators;
 // mod smart_pointers;
 // mod threads;
-
+mod channels;
 
 // use vectors::run_vectors;
 fn main() {
