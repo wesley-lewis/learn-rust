@@ -14,7 +14,9 @@
 // mod guess_game;
 // mod closures;
 // mod iterators;
-mod smart_pointers;
+// mod smart_pointers;
+// mod threads;
+
 
 // use vectors::run_vectors;
 fn main() {
@@ -43,7 +45,9 @@ fn main() {
     // tests::run_tests();
     // closures::run_closures();
     // iterators::run_iterators();
-    smart_pointers::run_smart_pointers();
+    // smart_pointers::run_smart_pointers();
+    // threads::run_threads();
+    channels::run_channels();
 }
 
 //
