@@ -18,7 +18,8 @@
 // mod threads;
 // mod channels;
 // mod mutexes;
-mod oops;
+// mod oops;
+mod gui;
 
 // use vectors::run_vectors;
 fn main() {
@@ -51,7 +52,8 @@ fn main() {
     // threads::run_threads();
     // channels::run_channels();
     // mutexes::run_mutexes();
-    oops::run_oops();
+    // oops::run_oops();
+    gui::run_gui();
 }
 
 //
@@ -59,4 +61,4 @@ fn main() {
 //     x + 2
 // }
 //
-// pg 308 
+// pg 398 
