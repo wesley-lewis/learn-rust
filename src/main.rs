@@ -19,7 +19,8 @@
 // mod channels;
 // mod mutexes;
 // mod oops;
-mod gui;
+// mod gui;
+mod patterns;
 
 // use vectors::run_vectors;
 fn main() {
@@ -53,7 +54,8 @@ fn main() {
     // channels::run_channels();
     // mutexes::run_mutexes();
     // oops::run_oops();
-    gui::run_gui();
+    // gui::run_gui();
+    patterns::run_patterns();
 }
 
 //
