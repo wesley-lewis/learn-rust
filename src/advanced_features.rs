@@ -8,6 +8,10 @@ pub fn run_advanced() {
     let (part1, part2) = split_at_mut(&mut my_slice, 2);
     println!("Part1: {:?} | Part2: {:?}", part1, part2);
     call_extern();
+    add_to_count(5);
+    unsafe {
+        println!("Static variable: {}", COUNTER);
+    }
 }
 
 // Unsafe Rust
@@ -71,4 +75,13 @@ pub extern "C" fn call_from_c() {
     println!("Just called a Rust Function from C!");
 }
 
-// 3) 
+// 3) Accessing or modifying a mutable static variable
+
+static HELLO_WORLD: &str = "Hello, World";
+static mut COUNTER: u32 = 0;
+
+fn add_to_count(inc: u32) {
+    unsafe {
+        COUNTER += inc;
+    }
+}
