@@ -20,7 +20,8 @@
 // mod mutexes;
 // mod oops;
 // mod gui;
-mod patterns;
+// mod patterns;
+mod advanced_features;
 
 // use vectors::run_vectors;
 fn main() {
@@ -55,7 +56,8 @@ fn main() {
     // mutexes::run_mutexes();
     // oops::run_oops();
     // gui::run_gui();
-    patterns::run_patterns();
+    // patterns::run_patterns();
+    advanced_features::run_advanced();
 }
 
 //
