@@ -21,7 +21,8 @@
 // mod oops;
 // mod gui;
 // mod patterns;
-mod advanced_features;
+// mod advanced_features;
+mod advanced_lifetimes;
 
 // use vectors::run_vectors;
 fn main() {
@@ -57,7 +58,8 @@ fn main() {
     // oops::run_oops();
     // gui::run_gui();
     // patterns::run_patterns();
-    advanced_features::run_advanced();
+    // advanced_features::run_advanced();
+    advanced_lifetimes::run_lifetimes();
 }
 
 //
